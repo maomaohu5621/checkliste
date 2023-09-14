@@ -173,7 +173,7 @@ const FilterableTableHighLevel = () => {
                       )}
                     </IconButton>
                   </TableCell>
-                  <TableCell className='table-cell' style={{color: getColorStatus(item.vertrieb)}}><span className='fett-o'>O</span></TableCell>
+                  <TableCell className='table-cell' style={{color: getColorStatus(item.status)}}><span className='fett-o'>O</span></TableCell>
                   <TableCell className='table-cell'>{item.auftragsnr}</TableCell>
                   <TableCell className='table-cell'>{item.lager}</TableCell>
                   <TableCell className='table-cell'>{item.event_date}</TableCell>
