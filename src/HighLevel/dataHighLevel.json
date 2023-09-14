@@ -1,0 +1,191 @@
+[
+    {
+        "id": "1",
+        "status": "Fertig",
+        "auftragsnr": "12356",
+        "pau_fau":"PAU1235",
+        "lager": "BOH",
+        "eventstart": "2023.01.03",
+        "additionalContent": "Details for Row 1",
+        "subTableData":[
+            {
+                "id": 1,
+                "art_nr": "546313",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Fertig"
+            },
+            {
+                "id": 2,
+                "art_nr": "1654313",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 3,
+                "art_nr": "12345",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "status": "Fertig",
+        "auftragsnr": "265489",
+        "pau_fau":"FAU1235",
+        "lager": "KÖ",
+        "eventstart": "2023.02.03",
+        "additionalContent": "Details for Row 2",
+        "subTableData":[
+            {
+                "id": 1,
+                "art_nr": "546313",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 2,
+                "art_nr": "1654313",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 3,
+                "art_nr": "12345",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "status": "Spät",
+        "auftragsnr": "54698453",
+        "pau_fau":"PAU35564",
+        "lager": "HH",
+        "eventstart": "2023.03.03",
+        "additionalContent": "Details for Row 3",
+        "subTableData":[
+            {
+                "id": 1,
+                "art_nr": "546313",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Spät",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 2,
+                "art_nr": "1654313",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Spät",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 3,
+                "art_nr": "12345",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Spät",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            }
+        ]
+    }
+    ,
+    {
+        "id": "4",
+        "status": "Spät",
+        "auftragsnr": "1654",
+        "pau_fau":"FAU35564",
+        "lager": "BE",
+        "eventstart": "2023.04.03",
+        "additionalContent": "Details for Row 3",
+        "subTableData":[
+            {
+                "id": 1,
+                "art_nr": "546313",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Spät",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 2,
+                "art_nr": "1654313",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Spät",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 3,
+                "art_nr": "12345",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Spät",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            }
+        ]
+    }
+]
