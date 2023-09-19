@@ -65,10 +65,17 @@ margin:10px;
 padding:0 5px;
 }
 
-.filter-frame .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input{
-background-color: pink;
+/* .filter-frame .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input{
 padding: 10px 14px;
+} */
+.filter-frame{
+  margin-left: 10px;
+  margin-right: 10px;
 }
+
+.filter-frame .css-qiwgdb {
+  padding: 10px 14px;
+  }
 h1{
   margin: 10px;
 }

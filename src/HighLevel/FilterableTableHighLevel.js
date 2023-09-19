@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../Header';
-import {  Select, MenuItem } from '@mui/material';
+import { Select, MenuItem } from '@mui/material';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -25,12 +25,12 @@ const FilterableTableHighLevel = () => {
   const [sortedOrder, setSortedOrder] = useState('asc');
   const [expandedRow, setExpandedRow] = useState(null);
   const [selectedLager, setSelectedLager] = useState('All');
+  const [selectedDateFilter, setSelectedDateFilter] = useState('all');
   const locations = ['All', ...new Set(data.map((item) => item.lager))];
 
   const handleLagerChange = (event) => {
     setSelectedLager(event.target.value);
   };
-
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
@@ -45,13 +45,30 @@ const FilterableTableHighLevel = () => {
     }
   };
 
+  const handleDateFilterChange = (event) => {
+    setSelectedDateFilter(event.target.value);
+  };
+
+  const calculateDateDifference = (eventDate, daysDifference) => {
+    const today = new Date();
+    const eventDateObj = new Date(eventDate);
+    const timeDiff = eventDateObj - today;
+    const daysDiff = timeDiff / (1000 * 60 * 60 * 24);
+    return daysDiff;
+  };
+
   const filteredData = data.filter(
     (item) =>
       (selectedLager === 'All' || item.lager === selectedLager) &&
       (item.status.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        item.event_date.toLowerCase().includes(searchTerm.toLowerCase()))
+        item.event_date.toLowerCase().includes(searchTerm.toLowerCase())) &&
+      (selectedDateFilter === 'all' ||
+        (selectedDateFilter === '30' && calculateDateDifference(item.event_date, 30) <= 30) ||
+        (selectedDateFilter === '60' && calculateDateDifference(item.event_date, 60) <= 60) ||
+        (selectedDateFilter === '90' && calculateDateDifference(item.event_date, 90) <= 90))
   );
+
 
 
   const sortedData = [...filteredData].sort((a, b) => {
@@ -70,18 +87,18 @@ const FilterableTableHighLevel = () => {
     }
   };
 
-  const getColorStatus=(status)=>{
-    switch(status){
-        case 'Fertig':
-            return 'green';
-        case 'Spät':
-            return 'red';
-        case 'Nachhaken':
-            return 'grey';
-        default:
-            return 'black';
+  const getColorStatus = (status) => {
+    switch (status) {
+      case 'Fertig':
+        return 'green';
+      case 'Spät':
+        return 'red';
+      case 'Nachhaken':
+        return 'grey';
+      default:
+        return 'black';
     }
-} 
+  }
 
   return (
     <div>
@@ -109,6 +126,16 @@ const FilterableTableHighLevel = () => {
                 {location}
               </MenuItem>
             ))}
+          </Select>
+        </div>
+
+        <div className="filter-frame">
+          <span>Filter nach Eventstart: </span>
+          <Select value={selectedDateFilter} onChange={handleDateFilterChange}>
+            <MenuItem value="all">All</MenuItem>
+            <MenuItem value="30">Heute + 30 Tage</MenuItem>
+            <MenuItem value="60">Heute + 60 Tage</MenuItem>
+            <MenuItem value="90">Heute + 90 Tage</MenuItem>
           </Select>
         </div>
       </div>
@@ -173,7 +200,7 @@ const FilterableTableHighLevel = () => {
                       )}
                     </IconButton>
                   </TableCell>
-                  <TableCell className='table-cell' style={{color: getColorStatus(item.status)}}><span className='fett-o'>O</span></TableCell>
+                  <TableCell className='table-cell' style={{ color: getColorStatus(item.status) }}><span className='fett-o'>O</span></TableCell>
                   <TableCell className='table-cell'>{item.auftragsnr}</TableCell>
                   <TableCell className='table-cell'>{item.lager}</TableCell>
                   <TableCell className='table-cell'>{item.event_date}</TableCell>

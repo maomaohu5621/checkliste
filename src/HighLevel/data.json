@@ -5,12 +5,11 @@
         "auftragsnr": "12356",
         "pau_fau":"PAU1235",
         "lager": "BOH",
-        "event_date": "2023-10-03",
-        "additionalContent": "Details for Row 1",
+        "event_date": "2023-10-03",       
         "subTableData":[
             {
                 "id": 1,
-                "art_nr": "546313",
+                "art_nr": "EIN",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -22,7 +21,7 @@
             },
             {
                 "id": 2,
-                "art_nr": "1654313",
+                "art_nr": "KLA",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -34,7 +33,7 @@
             },
             {
                 "id": 3,
-                "art_nr": "12345",
+                "art_nr": "360",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -52,12 +51,11 @@
         "auftragsnr": "265489",
         "pau_fau":"FAU1235",
         "lager": "KÖ",
-        "event_date": "2023-11-03",
-        "additionalContent": "Details for Row 2",
+        "event_date": "2023-11-13",       
         "subTableData":[
             {
                 "id": 1,
-                "art_nr": "546313",
+                "art_nr": "SPI",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -69,7 +67,7 @@
             },
             {
                 "id": 2,
-                "art_nr": "1654313",
+                "art_nr": "DRE",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -81,7 +79,7 @@
             },
             {
                 "id": 3,
-                "art_nr": "12345",
+                "art_nr": "EIN",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -99,12 +97,11 @@
         "auftragsnr": "54698453",
         "pau_fau":"PAU35564",
         "lager": "HH",
-        "event_date": "2023-12-03",
-        "additionalContent": "Details for Row 3",
+        "event_date": "2023-12-03",       
         "subTableData":[
             {
                 "id": 1,
-                "art_nr": "546313",
+                "art_nr": "360",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -116,7 +113,7 @@
             },
             {
                 "id": 2,
-                "art_nr": "1654313",
+                "art_nr": "EIN",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -128,7 +125,7 @@
             },
             {
                 "id": 3,
-                "art_nr": "12345",
+                "art_nr": "KLA",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -147,12 +144,11 @@
         "auftragsnr": "1654",
         "pau_fau":"FAU35564",
         "lager": "BE",
-        "event_date": "2024-01-03",
-        "additionalContent": "Details for Row 3",
+        "event_date": "2023-09-23",       
         "subTableData":[
             {
                 "id": 1,
-                "art_nr": "546313",
+                "art_nr": "SPI",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -164,7 +160,7 @@
             },
             {
                 "id": 2,
-                "art_nr": "1654313",
+                "art_nr": "DRE",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",
@@ -176,7 +172,7 @@
             },
             {
                 "id": 3,
-                "art_nr": "12345",
+                "art_nr": "SPM",
                 "vertrieb": "Fertig",
                 "marketing": "Fertig",
                 "branding":"Fertig",

@@ -26,6 +26,7 @@ const FilterableTableHighLevel = () => {
   const [expandedRow, setExpandedRow] = useState(null);
   const [selectedLager, setSelectedLager] = useState('All');
   const locations = ['All', ...new Set(data.map((item) => item.lager))];
+  
 
   const handleLagerChange = (event) => {
     setSelectedLager(event.target.value);
@@ -98,8 +99,8 @@ const FilterableTableHighLevel = () => {
             <SearchIcon />
           </IconButton>
         </div>
-        <div>
-          <span className='filter-lager'>Filter nach dem Lager: </span>
+        <div className='filter-frame'>
+          <span>Filter nach dem Lager: </span>
           <Select
             value={selectedLager}
             onChange={handleLagerChange}
@@ -173,7 +174,7 @@ const FilterableTableHighLevel = () => {
                       )}
                     </IconButton>
                   </TableCell>
-                  <TableCell className='table-cell' style={{color: getColorStatus(item.vertrieb)}}><span className='fett-o'>O</span></TableCell>
+                  <TableCell className='table-cell' style={{color: getColorStatus(item.status)}}><span className='fett-o'>O</span></TableCell>
                   <TableCell className='table-cell'>{item.auftragsnr}</TableCell>
                   <TableCell className='table-cell'>{item.lager}</TableCell>
                   <TableCell className='table-cell'>{item.event_date}</TableCell>
