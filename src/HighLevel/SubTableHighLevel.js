@@ -100,10 +100,10 @@ const SubTable = ({ subTableData }) => {
                 return 'green';
             case 'Spät':
                 return 'red';
-            case 'Nachhaken':
-                return 'grey';
+            case 'Überfällig':
+                return 'orange';
             default:
-                return 'black';
+                return 'grey';
         }
     }
     

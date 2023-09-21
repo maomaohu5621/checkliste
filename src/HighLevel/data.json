@@ -93,10 +93,103 @@
     },
     {
         "id": "3",
-        "status": "Spät",
+        "status": "Überfällig",
         "auftragsnr": "54698453",
         "pau_fau":"PAU35564",
         "lager": "HH",
+        "event_date": "2023-12-03",       
+        "subTableData":[
+            {
+                "id": 1,
+                "art_nr": "360",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Überfällig"
+            },
+            {
+                "id": 2,
+                "art_nr": "EIN",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 3,
+                "art_nr": "KLA",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "status": "Spät",
+        "auftragsnr": "1654",
+        "pau_fau":"FAU35564",
+        "lager": "BE",
+        "event_date": "2023-09-23",       
+        "subTableData":[
+            {
+                "id": 1,
+                "art_nr": "SPI",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 2,
+                "art_nr": "DRE",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 3,
+                "art_nr": "SPM",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Spät",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            }
+        ]
+    }
+    ,
+    {
+        "id": "5",
+        "status": "Spät",
+        "auftragsnr": "54698453",
+        "pau_fau":"PAU35564",
+        "lager": "MU",
         "event_date": "2023-12-03",       
         "subTableData":[
             {
@@ -136,14 +229,13 @@
                 "externe":"Nachhaken"
             }
         ]
-    }
-    ,
+    },
     {
-        "id": "4",
-        "status": "Spät",
+        "id": "6",
+        "status": "Fertig",
         "auftragsnr": "1654",
         "pau_fau":"FAU35564",
-        "lager": "BE",
+        "lager": "HH",
         "event_date": "2023-09-23",       
         "subTableData":[
             {

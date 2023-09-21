@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../Header';
 import { Select, MenuItem } from '@mui/material';
+import Pagination from '@mui/material/Pagination';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -24,9 +25,17 @@ const FilterableTableHighLevel = () => {
   const [sortedField, setSortedField] = useState(null);
   const [sortedOrder, setSortedOrder] = useState('asc');
   const [expandedRow, setExpandedRow] = useState(null);
+
   const [selectedLager, setSelectedLager] = useState('All');
   const [selectedDateFilter, setSelectedDateFilter] = useState('all');
   const locations = ['All', ...new Set(data.map((item) => item.lager))];
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const [rowsPerPage, setRowsPerPage] = useState(5);
+
+  const handleRowsPerPageChange = (event) => {
+    setRowsPerPage(event.target.value);
+  };
 
   const handleLagerChange = (event) => {
     setSelectedLager(event.target.value);
@@ -57,8 +66,7 @@ const FilterableTableHighLevel = () => {
     return daysDiff;
   };
 
-  const filteredData = data.filter(
-    (item) =>
+  const filteredData = data.filter((item) =>
       (selectedLager === 'All' || item.lager === selectedLager) &&
       (item.status.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -93,12 +101,17 @@ const FilterableTableHighLevel = () => {
         return 'green';
       case 'Spät':
         return 'red';
-      case 'Nachhaken':
-        return 'grey';
+      case 'Überfällig':
+        return 'orange';
       default:
-        return 'black';
+        return 'grey';
     }
   }
+
+  const startIndex = (currentPage - 1) * rowsPerPage;
+  const endIndex = Math.min(startIndex + rowsPerPage, sortedData.length);
+  const displayedData = sortedData.slice(startIndex, endIndex);
+  
 
   return (
     <div>
@@ -138,6 +151,19 @@ const FilterableTableHighLevel = () => {
             <MenuItem value="90">Heute + 90 Tage</MenuItem>
           </Select>
         </div>
+
+        <div className="rows-per-page">
+          <span>Zeilen pro Seite anzeigen: </span>
+          <Select
+            value={rowsPerPage}
+            onChange={handleRowsPerPageChange}
+          >
+            <MenuItem value={2}>2</MenuItem>
+            <MenuItem value={3}>3</MenuItem>
+            <MenuItem value={4}>4</MenuItem>            
+          </Select>
+        </div>
+
       </div>
       <TableContainer component={Paper}>
         <Table aria-label="expandable table">
@@ -184,7 +210,7 @@ const FilterableTableHighLevel = () => {
           </TableHead>
 
           <TableBody >
-            {sortedData.map((item, id) => (
+            {displayedData.map((item, id) => (
               <React.Fragment key={id}>
                 <TableRow>
                   <TableCell className='table-cell'>
@@ -221,6 +247,11 @@ const FilterableTableHighLevel = () => {
             ))}
           </TableBody>
         </Table>
+        <Pagination
+          count={Math.ceil(sortedData.length / rowsPerPage)}
+          page={currentPage}
+          onChange={(event, value) => setCurrentPage(value)}
+        />
       </TableContainer>
     </div>
   );
