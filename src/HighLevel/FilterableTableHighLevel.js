@@ -152,15 +152,15 @@ const FilterableTableHighLevel = () => {
           </Select>
         </div>
 
-        <div className="rows-per-page">
+        <div className="rows-per-page filter-frame">
           <span>Zeilen pro Seite anzeigen: </span>
           <Select
             value={rowsPerPage}
             onChange={handleRowsPerPageChange}
           >
             <MenuItem value={2}>2</MenuItem>
-            <MenuItem value={3}>3</MenuItem>
-            <MenuItem value={4}>4</MenuItem>            
+            <MenuItem value={5}>5</MenuItem>
+            <MenuItem value={10}>10</MenuItem>            
           </Select>
         </div>
 

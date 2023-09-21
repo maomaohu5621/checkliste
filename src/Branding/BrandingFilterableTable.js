@@ -138,7 +138,7 @@ const BrandingFilterableTable = () => {
           </Select>
         </div>
 
-        <div className="rows-per-page">
+        <div className="rows-per-page filter-frame">
           <span>Zeilen pro Seite anzeigen: </span>
           <Select
             value={rowsPerPage}
