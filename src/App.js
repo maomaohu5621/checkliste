@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home';
 import FilterableTableHighLevel from './HighLevel/FilterableTableHighLevel';
 import BrandingFilterableTable from './Branding/BrandingFilterableTable'
+import HighLevelBereiche from './HighLevelBereiche/HighLevelBereiche';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 
@@ -15,7 +16,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/highlevel" element={<FilterableTableHighLevel />} />
-          <Route path="/branding" element={<BrandingFilterableTable />} />
+          <Route path="/highlevelbereiche" element={<HighLevelBereiche />} />
+          <Route path="/highlevelbereiche/branding" element={<BrandingFilterableTable />} />
         </Routes>        
       </Router>
       

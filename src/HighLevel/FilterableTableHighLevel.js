@@ -33,10 +33,6 @@ const FilterableTableHighLevel = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(5);
 
-  const handleRowsPerPageChange = (event) => {
-    setRowsPerPage(event.target.value);
-  };
-
   const handleLagerChange = (event) => {
     setSelectedLager(event.target.value);
   };
@@ -106,8 +102,11 @@ const FilterableTableHighLevel = () => {
       default:
         return 'grey';
     }
-  }
+  };
 
+  const handleRowsPerPageChange = (event) => {
+    setRowsPerPage(event.target.value);
+  };
   const startIndex = (currentPage - 1) * rowsPerPage;
   const endIndex = Math.min(startIndex + rowsPerPage, sortedData.length);
   const displayedData = sortedData.slice(startIndex, endIndex);

@@ -139,8 +139,7 @@ const SubTable = ({ subTableData }) => {
                     ))}
                 </TableBody>
             </Table>
-        </TableContainer> 
-        // <div>SubTable</div>
+        </TableContainer>
     );
 };
 

@@ -51,9 +51,14 @@ li{
 }
 .table-head th span{
   font-weight: bold;
+  font-size: larger;
 }
 .subtable-head{
   background-color: #f9f9f9;
+}
+.subtable-head th{
+  /* font-weight:600; */
+  color:rgb(46, 46, 46);
 }
 .table-cell{
 background-color: #f0f0f0;
@@ -94,3 +99,17 @@ tr{border-bottom: 1px solid rgba(224, 224, 224, 1);}
 .grey{color:grey;}
 .green{color:green;}
 .red{color:red;}
+
+.subtable-pagination{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+.subtable-pagination li{
+  padding: 0.5rem;
+}
+.subtable-pagination span{
+  padding-top: 1rem;
+  margin-right: 1rem;
+}

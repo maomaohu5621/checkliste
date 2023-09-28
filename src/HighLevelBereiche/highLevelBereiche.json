@@ -1,0 +1,394 @@
+[
+    {
+        "id": "1",
+        "status": "Fertig",
+        "bereiche":"Vertrieb",   
+        "subTableData":[
+            {
+                "id": 1,
+                "status": "Fertig",
+                "auftragsnr": "12356",
+                "lager": "BOH",
+                "event_date": "2023-10-03"
+            },
+            {
+                "id": 2,
+                "status": "Fertig",
+                "auftragsnr": "5986",
+                "lager": "KÖ",
+                "event_date": "2023-11-03"
+            },
+            {
+                "id": 3,
+                "status": "Fertig",
+                "auftragsnr": "698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 4,
+                "status": "Fertig",
+                "auftragsnr": "71654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            },
+            {
+                "id": 5,
+                "status": "Fertig",
+                "auftragsnr": "54698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 6,
+                "status": "Fertig",
+                "auftragsnr": "1654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "status": "Spät",
+        "bereiche":"Marketing",   
+        "subTableData":[
+            {
+                "id": 1,
+                "status": "Fertig",
+                "auftragsnr": "12356",
+                "lager": "BOH",
+                "event_date": "2023-10-03"
+            },
+            {
+                "id": 2,
+                "status": "Spät",
+                "auftragsnr": "5986",
+                "lager": "KÖ",
+                "event_date": "2023-11-03"
+            },
+            {
+                "id": 3,
+                "status": "Fertig",
+                "auftragsnr": "698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 4,
+                "status": "Fertig",
+                "auftragsnr": "71654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            },
+            {
+                "id": 5,
+                "status": "Fertig",
+                "auftragsnr": "54698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 6,
+                "status": "Fertig",
+                "auftragsnr": "1654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "status": "Fertig",
+        "bereiche":"Branding",   
+        "subTableData":[
+            {
+                "id": 1,
+                "status": "Fertig",
+                "auftragsnr": "12356",
+                "lager": "BOH",
+                "event_date": "2023-10-03"
+            },
+            {
+                "id": 2,
+                "status": "Fertig",
+                "auftragsnr": "5986",
+                "lager": "KÖ",
+                "event_date": "2023-11-03"
+            },
+            {
+                "id": 3,
+                "status": "Fertig",
+                "auftragsnr": "698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 4,
+                "status": "Fertig",
+                "auftragsnr": "71654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            },
+            {
+                "id": 5,
+                "status": "Fertig",
+                "auftragsnr": "54698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 6,
+                "status": "Fertig",
+                "auftragsnr": "1654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "status": "Fertig",
+        "bereiche":"Entwicklung",   
+        "subTableData":[
+            {
+                "id": 1,
+                "status": "Fertig",
+                "auftragsnr": "12356",
+                "lager": "BOH",
+                "event_date": "2023-10-03"
+            },
+            {
+                "id": 2,
+                "status": "Fertig",
+                "auftragsnr": "5986",
+                "lager": "KÖ",
+                "event_date": "2023-11-03"
+            },
+            {
+                "id": 3,
+                "status": "Fertig",
+                "auftragsnr": "698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 4,
+                "status": "Fertig",
+                "auftragsnr": "71654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            },
+            {
+                "id": 5,
+                "status": "Fertig",
+                "auftragsnr": "54698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 6,
+                "status": "Fertig",
+                "auftragsnr": "1654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "status": "Überfällig",
+        "bereiche":"Support",   
+        "subTableData":[
+            {
+                "id": 1,
+                "status": "Überfällig",
+                "auftragsnr": "12356",
+                "lager": "BOH",
+                "event_date": "2023-10-03"
+            },
+            {
+                "id": 2,
+                "status": "Fertig",
+                "auftragsnr": "5986",
+                "lager": "KÖ",
+                "event_date": "2023-11-03"
+            },
+            {
+                "id": 3,
+                "status": "Fertig",
+                "auftragsnr": "698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 4,
+                "status": "Fertig",
+                "auftragsnr": "71654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            },
+            {
+                "id": 5,
+                "status": "Fertig",
+                "auftragsnr": "54698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 6,
+                "status": "Fertig",
+                "auftragsnr": "1654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "status": "Fertig",
+        "bereiche":"Einkauf",   
+        "subTableData":[
+            {
+                "id": 1,
+                "status": "Fertig",
+                "auftragsnr": "12356",
+                "lager": "BOH",
+                "event_date": "2023-10-03"
+            },
+            {
+                "id": 2,
+                "status": "Fertig",
+                "auftragsnr": "5986",
+                "lager": "KÖ",
+                "event_date": "2023-11-03"
+            },
+            {
+                "id": 3,
+                "status": "Fertig",
+                "auftragsnr": "698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 4,
+                "status": "Fertig",
+                "auftragsnr": "71654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            },
+            {
+                "id": 5,
+                "status": "Fertig",
+                "auftragsnr": "54698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 6,
+                "status": "Fertig",
+                "auftragsnr": "1654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "status": "Fertig",
+        "bereiche":"Kunden",   
+        "subTableData":[
+            {
+                "id": 1,
+                "status": "Fertig",
+                "auftragsnr": "12356",
+                "lager": "BOH",
+                "event_date": "2023-10-03"
+            },
+            {
+                "id": 2,
+                "status": "Fertig",
+                "auftragsnr": "5986",
+                "lager": "KÖ",
+                "event_date": "2023-11-03"
+            },
+            {
+                "id": 3,
+                "status": "Fertig",
+                "auftragsnr": "698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 4,
+                "status": "Fertig",
+                "auftragsnr": "71654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            },
+            {
+                "id": 5,
+                "status": "Fertig",
+                "auftragsnr": "54698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 6,
+                "status": "Fertig",
+                "auftragsnr": "1654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "status": "Fertig",
+        "bereiche":"Externe",   
+        "subTableData":[
+            {
+                "id": 1,
+                "status": "Fertig",
+                "auftragsnr": "12356",
+                "lager": "BOH",
+                "event_date": "2023-10-03"
+            },
+            {
+                "id": 2,
+                "status": "Fertig",
+                "auftragsnr": "5986",
+                "lager": "KÖ",
+                "event_date": "2023-11-03"
+            },
+            {
+                "id": 3,
+                "status": "Fertig",
+                "auftragsnr": "698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 4,
+                "status": "Fertig",
+                "auftragsnr": "71654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            },
+            {
+                "id": 5,
+                "status": "Fertig",
+                "auftragsnr": "54698453",
+                "lager": "HH",
+                "event_date": "2023-12-03"
+            },
+            {
+                "id": 6,
+                "status": "Fertig",
+                "auftragsnr": "1654",
+                "lager": "BE",
+                "event_date": "2024-01-03"
+            }
+        ]
+    }
+]

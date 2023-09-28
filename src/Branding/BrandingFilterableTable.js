@@ -33,9 +33,7 @@ const BrandingFilterableTable = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(5);
 
-  const handleRowsPerPageChange = (event) => {
-    setRowsPerPage(event.target.value);
-  };
+
 
   const handleLagerChange = (event) => {
     setSelectedLager(event.target.value);
@@ -67,14 +65,14 @@ const BrandingFilterableTable = () => {
   };
 
   const filteredData = dataBranding.filter((item) =>
-  (selectedLager === 'All' || item.lager === selectedLager) &&
+    (selectedLager === 'All' || item.lager === selectedLager) &&
     (item.status.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    item.event_date.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (selectedDateFilter === 'all' ||
-        (selectedDateFilter === '30' && calculateDateDifference(item.event_date, 30) <= 30) ||
-        (selectedDateFilter === '60' && calculateDateDifference(item.event_date, 60) <= 60) ||
-        (selectedDateFilter === '90' && calculateDateDifference(item.event_date, 90) <= 90))
+      item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.event_date.toLowerCase().includes(searchTerm.toLowerCase())) &&
+    (selectedDateFilter === 'all' ||
+      (selectedDateFilter === '30' && calculateDateDifference(item.event_date, 30) <= 30) ||
+      (selectedDateFilter === '60' && calculateDateDifference(item.event_date, 60) <= 60) ||
+      (selectedDateFilter === '90' && calculateDateDifference(item.event_date, 90) <= 90))
   );
 
 
@@ -94,11 +92,25 @@ const BrandingFilterableTable = () => {
     }
   };
 
-
+  const handleRowsPerPageChange = (event) => {
+    setRowsPerPage(event.target.value);
+  };
   const startIndex = (currentPage - 1) * rowsPerPage;
   const endIndex = Math.min(startIndex + rowsPerPage, sortedData.length);
   const displayedData = sortedData.slice(startIndex, endIndex);
-  
+
+  const getColorStatus = (status) => {
+    switch (status) {
+      case 'Fertig':
+        return 'green';
+      case 'Spät':
+        return 'red';
+      case 'Überfällig':
+        return 'orange';
+      default:
+        return 'grey';
+    }
+  }
 
   return (
     <div>
@@ -146,7 +158,7 @@ const BrandingFilterableTable = () => {
           >
             <MenuItem value={2}>2</MenuItem>
             <MenuItem value={5}>5</MenuItem>
-            <MenuItem value={10}>10</MenuItem>            
+            <MenuItem value={10}>10</MenuItem>
           </Select>
         </div>
       </div>
@@ -210,11 +222,10 @@ const BrandingFilterableTable = () => {
                       )}
                     </IconButton>
                   </TableCell>
-                  <TableCell className='table-cell' >
-                   {/* <span className='fett-o' style={{ color: textColor }}>O {textColor}</span> */}
-                   {/* <span className='fett-o' style={{ color: textColor[item.id] }}>O {textColor[item.id]}</span> */}
-                    <span className='fett-o' >O</span> 
-                    </TableCell>
+                  <TableCell className='table-cell' style={{color:getColorStatus(item.status)}}>
+
+                    <span className='fett-o' >O</span>
+                  </TableCell>
                   <TableCell className='table-cell'>{item.auftragsnr}</TableCell>
                   <TableCell className='table-cell'>{item.lager}</TableCell>
                   <TableCell className='table-cell'>{item.event_date}</TableCell>
@@ -224,8 +235,8 @@ const BrandingFilterableTable = () => {
                     <Collapse in={expandedRow === item.id} timeout="auto" unmountOnExit>
                       <Accordion>
                         <SubTable
-                          subTableDataBranding={item.subTableDataBranding}                          
-                         />
+                          subTableDataBranding={item.subTableDataBranding}
+                        />
                       </Accordion>
                     </Collapse>
                   </TableCell>

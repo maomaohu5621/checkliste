@@ -14,13 +14,16 @@ const Header = () => {
                     <Link to="/highlevel">High Level</Link>
                 </li>
                 <li>
-                    <Link to="/branding">Branding</Link>
+                    <Link to="/highlevelbereiche">High Level Nach Bereiche</Link>
+                </li>
+                <li>
+                    {/* <Link to="/highlevelbereiche/Branding">Branding</Link> */}
                 </li>
 
             </ul>
         </div>
-    )
+    );
 
-}
+};
 
 export default Header;

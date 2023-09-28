@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "status": "O",
+        "status": "Fertig",
         "auftragsnr": "12356",
         "pau_fau":"PAU1235",
         "lager": "BOH",
@@ -16,8 +16,8 @@
     },
     {
         "id": "2",
-        "status": "O",
-        "auftragsnr": "SPI",
+        "status": "Fertig",
+        "auftragsnr": "5986",
         "pau_fau":"FAU1235",
         "lager": "KÖ",
         "event_date": "2023-11-03",
@@ -37,8 +37,8 @@
     },
     {
         "id": "3",
-        "status": "O",
-        "auftragsnr": "54698453",
+        "status": "Fertig",
+        "auftragsnr": "698453",
         "pau_fau":"PAU35564",
         "lager": "HH",
         "event_date": "2023-12-03",
@@ -62,8 +62,8 @@
     ,
     {
         "id": "4",
-        "status": "O",
-        "auftragsnr": "1654",
+        "status": "Fertig",
+        "auftragsnr": "71654",
         "pau_fau":"FAU35564",
         "lager": "BE",
         "event_date": "2024-01-03",
@@ -93,7 +93,7 @@
     },
     {
         "id": "5",
-        "status": "O",
+        "status": "Fertig",
         "auftragsnr": "54698453",
         "pau_fau":"PAU35564",
         "lager": "HH",
@@ -117,7 +117,7 @@
     },
     {
         "id": "6",
-        "status": "O",
+        "status": "Fertig",
         "auftragsnr": "1654",
         "pau_fau":"FAU35564",
         "lager": "BE",
