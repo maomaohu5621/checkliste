@@ -115,7 +115,7 @@ const BrandingFilterableTable = () => {
   return (
     <div>
       <Header />
-      <h1>Branding</h1>
+      <h2>HighLevel Bereiche \ Branding</h2>
       <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap',}}>
         <div className="searchbar">
           <InputBase
