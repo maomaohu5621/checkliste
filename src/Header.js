@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
 
     return (
-        <div>
+        <div className="menu">
             <ul>
                 <li>
                     <Link to="/">LOGO</Link>
@@ -14,7 +14,7 @@ const Header = () => {
                     <Link to="/highlevel">High Level</Link>
                 </li>
                 <li>
-                    <Link to="/highlevelbereiche">High Level Nach Bereiche</Link>
+                    <Link to="/highlevelbereiche">HighLevel Bereiche</Link>
                 </li>
                 <li>
                     {/* <Link to="/highlevelbereiche/Branding">Branding</Link> */}

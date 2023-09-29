@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -6,9 +6,10 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import BrandingAufgaben from "./BrandingAufgaben";
 
 const SubTable = ({ subTableDataBranding }) => {
-    const [selectedColorByRow1, setSelectedColorByRow1] = useState({});
+    /* const [selectedColorByRow1, setSelectedColorByRow1] = useState({});
     const [selectedColorByRow2, setSelectedColorByRow2] = useState({});
     const [selectedColorByRow3, setSelectedColorByRow3] = useState({});
 
@@ -29,7 +30,7 @@ const SubTable = ({ subTableDataBranding }) => {
             ...prevSelectedColorByRow,
             [itemId]: selectedColor,
         }));
-    };
+    }; */
 
     return (
         <TableContainer component={Paper}>
@@ -37,18 +38,19 @@ const SubTable = ({ subTableDataBranding }) => {
                 <TableHead className="subtable-head">
                     <TableRow>
                         <TableCell>ArtikelNr</TableCell>
-                        <TableCell />
-                        <TableCell />
-                        <TableCell />
+
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {subTableDataBranding.map((item) => (
                         <div key={item.id}>
                             <TableRow>
-                                <TableCell colSpan={5}>{item.art_nr}</TableCell>
+                                <TableCell><span className="left-space">{item.art_nr}</span></TableCell>
                             </TableRow>
-                            <TableRow key={item.id}>
+                            <TableRow>
+                                <BrandingAufgaben aufgabenBranding={item.aufgabenBranding} />
+                            </TableRow>
+                            {/* <TableRow key={item.id}>
                                 <TableCell></TableCell>
                                 <TableCell>
                                     {item.aufgabe_a && (
@@ -76,15 +78,7 @@ const SubTable = ({ subTableDataBranding }) => {
                                                         onChange={() => handleColorChange1(item.id, "green")}
                                                     /> Fertig
                                                 </label>
-                                                <label>
-                                                    <input
-                                                        type="radio"
-                                                        name={`radio_${item.id}_1`}
-                                                        value="red"
-                                                        checked={selectedColorByRow1[item.id] === "red"}
-                                                        onChange={() => handleColorChange1(item.id, "red")}
-                                                    /> Spät
-                                                </label>
+
                                             </span>
                                         </div>
                                     )}
@@ -116,15 +110,7 @@ const SubTable = ({ subTableDataBranding }) => {
                                                         onChange={() => handleColorChange2(item.id, "green")}
                                                     /> Fertig
                                                 </label>
-                                                <label>
-                                                    <input
-                                                        type="radio"
-                                                        name={`radio_${item.id}_2`}
-                                                        value="red"
-                                                        checked={selectedColorByRow2[item.id] === "red"}
-                                                        onChange={() => handleColorChange2(item.id, "red")}
-                                                    /> Spät
-                                                </label>
+
                                             </span>
                                         </div>
                                     )}
@@ -155,19 +141,12 @@ const SubTable = ({ subTableDataBranding }) => {
                                                         onChange={() => handleColorChange3(item.id, "green")}
                                                     /> Fertig
                                                 </label>
-                                                <label>
-                                                    <input
-                                                        type="radio"
-                                                        name={`radio_${item.id}_3`}
-                                                        value="red"
-                                                        checked={selectedColorByRow3[item.id] === "red"}
-                                                        onChange={() => handleColorChange3(item.id, "red")}
-                                                    /> Spät
-                                                </label>
-                                            </span></div>
+
+                                            </span>
+                                        </div>
                                     )}
                                 </TableCell>
-                            </TableRow>
+                            </TableRow> */}
                         </div>
                     ))}
                 </TableBody>

@@ -18,7 +18,7 @@ import TableSortLabel from '@mui/material/TableSortLabel';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SubTable from './SubTableHighLevel';
-import data from './data.json';
+import dataHighLevel from './dataHighLevel.json'
 
 const FilterableTableHighLevel = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -28,7 +28,7 @@ const FilterableTableHighLevel = () => {
 
   const [selectedLager, setSelectedLager] = useState('All');
   const [selectedDateFilter, setSelectedDateFilter] = useState('all');
-  const locations = ['All', ...new Set(data.map((item) => item.lager))];
+  const locations = ['All', ...new Set(dataHighLevel.map((item) => item.lager))];
 
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(5);
@@ -62,7 +62,7 @@ const FilterableTableHighLevel = () => {
     return daysDiff;
   };
 
-  const filteredData = data.filter((item) =>
+  const filteredData = dataHighLevel.filter((item) =>
       (selectedLager === 'All' || item.lager === selectedLager) &&
       (item.status.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -116,7 +116,7 @@ const FilterableTableHighLevel = () => {
     <div>
       <Header />
       <h1>High Level</h1>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', alignItems: 'center',flexWrap: 'wrap', }}>
         <div className="searchbar">
           <InputBase
             placeholder="Search..."
@@ -208,7 +208,7 @@ const FilterableTableHighLevel = () => {
             </TableRow>
           </TableHead>
 
-          <TableBody >
+          <TableBody  className='table-body'>
             {displayedData.map((item, id) => (
               <React.Fragment key={id}>
                 <TableRow>

@@ -116,7 +116,7 @@ const BrandingFilterableTable = () => {
     <div>
       <Header />
       <h1>Branding</h1>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap',}}>
         <div className="searchbar">
           <InputBase
             placeholder="Search..."
@@ -205,7 +205,7 @@ const BrandingFilterableTable = () => {
               </TableCell>
             </TableRow>
           </TableHead>
-          <TableBody >
+          <TableBody className='table-body'>
             {displayedData.map((item) => (
               <React.Fragment key={item.id}>
                 <TableRow>

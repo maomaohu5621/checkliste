@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../Header';
-import highLevelBereiche from './highLevelBereiche.json';
+import dataHighLevelBereiche from './dataHighLevelBereiche.json';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -56,7 +56,7 @@ const HighLevelBereiche = () => {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {highLevelBereiche.map((item, id) => (
+                        {dataHighLevelBereiche.map((item, id) => (
                             <React.Fragment key={id}>
                                 <TableRow>
                                     <TableCell className='table-cell' align="center">
