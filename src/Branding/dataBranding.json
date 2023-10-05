@@ -5,7 +5,7 @@
         "auftragsnr": "12356",
         "pau_fau": "PAU1235",
         "lager": "BOH",
-        "event_date": "2023-10-03",
+        "event_date": "2023-10-23",
         "subTableDataBranding": [
             {
                 "id": 1,
@@ -26,7 +26,7 @@
         "auftragsnr": "5986",
         "pau_fau": "FAU1235",
         "lager": "KÖ",
-        "event_date": "2023-11-03",
+        "event_date": "2023-09-03",
         "subTableDataBranding": [
             {
                 "id": 1,
@@ -240,7 +240,7 @@
         "auftragsnr": "1654",
         "pau_fau": "FAU35564",
         "lager": "BE",
-        "event_date": "2024-01-03",
+        "event_date": "2024-02-03",
         "subTableDataBranding": [
             {
                 "id": 1,

@@ -70,9 +70,9 @@ const BrandingFilterableTable = () => {
       item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
       item.event_date.toLowerCase().includes(searchTerm.toLowerCase())) &&
     (selectedDateFilter === 'all' ||
-      (selectedDateFilter === '30' && calculateDateDifference(item.event_date, 30) <= 30) ||
-      (selectedDateFilter === '60' && calculateDateDifference(item.event_date, 60) <= 60) ||
-      (selectedDateFilter === '90' && calculateDateDifference(item.event_date, 90) <= 90))
+      (selectedDateFilter === '30' && calculateDateDifference(item.event_date, 30) <= 30 && calculateDateDifference(item.event_date) >= 0) ||
+      (selectedDateFilter === '60' && calculateDateDifference(item.event_date, 60) <= 60 && calculateDateDifference(item.event_date) >= 0) ||
+      (selectedDateFilter === '90' && calculateDateDifference(item.event_date, 90) <= 90 && calculateDateDifference(item.event_date) >= 0))
   );
 
 
