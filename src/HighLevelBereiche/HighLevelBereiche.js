@@ -28,7 +28,7 @@ const HighLevelBereiche = () => {
     const getColorStatus = (status) => {
         switch (status) {
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Überfällig':
