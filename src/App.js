@@ -4,7 +4,7 @@ import FilterableTableHighLevel from './HighLevel/FilterableTableHighLevel';
 import BrandingFilterableTable from './Branding/BrandingFilterableTable'
 import HighLevelBereiche from './HighLevelBereiche/HighLevelBereiche';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import './App.css';
+import './css/App.css';
 
 
 const App = () => {

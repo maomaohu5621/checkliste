@@ -17,28 +17,39 @@ import Accordion from '@mui/material/Accordion';
 import TableSortLabel from '@mui/material/TableSortLabel';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import SubTable from './SubTableHighLevel';
-import data from './data.json'
+import SubTable from './BrandingSubTable';
+import dataBranding from './dataBranding.json';
 
-const FilterableTableHighLevel = () => {
+const BrandingFilterableTable = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [selectedLager, setSelectedLager] = useState('All');
-  const [selectedDateFilter, setSelectedDateFilter] = useState('all');
-  const locations = ['All', ...new Set(data.map((item) => item.lager))];
-
   const [sortedField, setSortedField] = useState(null);
   const [sortedOrder, setSortedOrder] = useState('asc');
   const [expandedRow, setExpandedRow] = useState(null);
 
+  const [selectedLager, setSelectedLager] = useState('All');
+  const [selectedDateFilter, setSelectedDateFilter] = useState('all');
+  const locations = ['All', ...new Set(dataBranding.map((item) => item.lager))];
+
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(5);
+
+
+
+  const handleLagerChange = (event) => {
+    setSelectedLager(event.target.value);
+  };
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const handleLagerChange = (event) => {
-    setSelectedLager(event.target.value);
+  const handleSort = (field) => {
+    if (field === sortedField) {
+      setSortedOrder(sortedOrder === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortedField(field);
+      setSortedOrder('asc');
+    }
   };
 
   const handleDateFilterChange = (event) => {
@@ -53,25 +64,17 @@ const FilterableTableHighLevel = () => {
     return daysDiff;
   };
 
-  const handleSort = (field) => {
-    if (field === sortedField) {
-      setSortedOrder(sortedOrder === 'asc' ? 'desc' : 'asc');
-    } else {
-      setSortedField(field);
-      setSortedOrder('asc');
-    }
-  };
-
-  const filteredData = data.filter((item) =>
-      (selectedLager === 'All' || item.lager === selectedLager) &&
-      (item.status.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        item.event_date.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (selectedDateFilter === 'all' ||
-        (selectedDateFilter === '30' && calculateDateDifference(item.event_date, 30) <= 30 && calculateDateDifference(item.event_date) >= 0) ||
-        (selectedDateFilter === '60' && calculateDateDifference(item.event_date, 60) <= 60 && calculateDateDifference(item.event_date) >= 0) ||
-        (selectedDateFilter === '90' && calculateDateDifference(item.event_date, 90) <= 90 && calculateDateDifference(item.event_date) >= 0))
+  const filteredData = dataBranding.filter((item) =>
+    (selectedLager === 'All' || item.lager === selectedLager) &&
+    (item.status.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.event_date.toLowerCase().includes(searchTerm.toLowerCase())) &&
+    (selectedDateFilter === 'all' ||
+      (selectedDateFilter === '30' && calculateDateDifference(item.event_date, 30) <= 30 && calculateDateDifference(item.event_date) >= 0) ||
+      (selectedDateFilter === '60' && calculateDateDifference(item.event_date, 60) <= 60 && calculateDateDifference(item.event_date) >= 0) ||
+      (selectedDateFilter === '90' && calculateDateDifference(item.event_date, 90) <= 90 && calculateDateDifference(item.event_date) >= 0))
   );
+
 
   const sortedData = [...filteredData].sort((a, b) => {
     if (sortedOrder === 'asc') {
@@ -95,7 +98,7 @@ const FilterableTableHighLevel = () => {
   const startIndex = (currentPage - 1) * rowsPerPage;
   const endIndex = Math.min(startIndex + rowsPerPage, sortedData.length);
   const displayedData = sortedData.slice(startIndex, endIndex);
-  
+
   const getColorStatus = (status) => {
     switch (status) {
       case 'Fertig':
@@ -107,13 +110,13 @@ const FilterableTableHighLevel = () => {
       default:
         return 'grey';
     }
-  };
-  
+  }
+
   return (
     <div>
       <Header />
-      <h1>High Level</h1>
-      <div style={{ display: 'flex', alignItems: 'center',flexWrap: 'wrap', }}>
+      <h2>HighLevel Bereiche \ Branding</h2>
+      <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap',}}>
         <div className="searchbar">
           <InputBase
             placeholder="Search..."
@@ -137,7 +140,6 @@ const FilterableTableHighLevel = () => {
             ))}
           </Select>
         </div>
-
         <div className="filter-frame">
           <span>Filter nach Eventstart: </span>
           <Select value={selectedDateFilter} onChange={handleDateFilterChange}>
@@ -156,10 +158,9 @@ const FilterableTableHighLevel = () => {
           >
             <MenuItem value={2}>2</MenuItem>
             <MenuItem value={5}>5</MenuItem>
-            <MenuItem value={10}>10</MenuItem>            
+            <MenuItem value={10}>10</MenuItem>
           </Select>
         </div>
-
       </div>
       <TableContainer component={Paper}>
         <Table aria-label="expandable table">
@@ -204,37 +205,38 @@ const FilterableTableHighLevel = () => {
               </TableCell>
             </TableRow>
           </TableHead>
-
-          <TableBody  className='table-body'>
-            {displayedData.map((item, id) => (
-              <React.Fragment key={id}>
+          <TableBody className='table-body'>
+            {displayedData.map((item) => (
+              <React.Fragment key={item.id}>
                 <TableRow>
                   <TableCell className='table-cell'>
                     <IconButton
                       aria-label="expand row"
                       size="small"
-                      onClick={() => handleRowClick(id)}
+                      onClick={() => handleRowClick(item.id)}
                     >
-                      {expandedRow === id ? (
+                      {expandedRow === item.id ? (
                         <ExpandLessIcon />
                       ) : (
                         <ExpandMoreIcon />
                       )}
                     </IconButton>
                   </TableCell>
-                  <TableCell className='table-cell' style={{ color: getColorStatus(item.status) }}><span className='fett-o'>O</span></TableCell>
+                  <TableCell className='table-cell' style={{color:getColorStatus(item.status)}}>
+
+                    <span className='fett-o' >O</span>
+                  </TableCell>
                   <TableCell className='table-cell'>{item.auftragsnr}</TableCell>
                   <TableCell className='table-cell'>{item.lager}</TableCell>
-                  <TableCell className='table-cell'>{new Date(item.event_date).toLocaleDateString()}</TableCell>
-
-
+                  <TableCell className='table-cell'>{item.event_date}</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell colSpan={5}>
-
-                    <Collapse in={expandedRow === id} timeout="auto" unmountOnExit>
+                    <Collapse in={expandedRow === item.id} timeout="auto" unmountOnExit>
                       <Accordion>
-                        <SubTable subTableData={item.subTableData} />
+                        <SubTable
+                          subTableDataBranding={item.subTableDataBranding}
+                        />
                       </Accordion>
                     </Collapse>
                   </TableCell>
@@ -253,4 +255,4 @@ const FilterableTableHighLevel = () => {
   );
 };
 
-export default FilterableTableHighLevel;
+export default BrandingFilterableTable;

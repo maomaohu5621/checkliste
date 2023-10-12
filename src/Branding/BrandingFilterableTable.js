@@ -18,38 +18,27 @@ import TableSortLabel from '@mui/material/TableSortLabel';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SubTable from './BrandingSubTable';
-import dataBranding from './dataBranding.json';
+import data from './data.json';
 
 const BrandingFilterableTable = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedLager, setSelectedLager] = useState('All');
+  const [selectedDateFilter, setSelectedDateFilter] = useState('all');
+  const locations = ['All', ...new Set(data.map((item) => item.lager))];
+
   const [sortedField, setSortedField] = useState(null);
   const [sortedOrder, setSortedOrder] = useState('asc');
   const [expandedRow, setExpandedRow] = useState(null);
 
-  const [selectedLager, setSelectedLager] = useState('All');
-  const [selectedDateFilter, setSelectedDateFilter] = useState('all');
-  const locations = ['All', ...new Set(dataBranding.map((item) => item.lager))];
-
   const [currentPage, setCurrentPage] = useState(1);
   const [rowsPerPage, setRowsPerPage] = useState(5);
-
-
-
-  const handleLagerChange = (event) => {
-    setSelectedLager(event.target.value);
-  };
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const handleSort = (field) => {
-    if (field === sortedField) {
-      setSortedOrder(sortedOrder === 'asc' ? 'desc' : 'asc');
-    } else {
-      setSortedField(field);
-      setSortedOrder('asc');
-    }
+  const handleLagerChange = (event) => {
+    setSelectedLager(event.target.value);
   };
 
   const handleDateFilterChange = (event) => {
@@ -64,7 +53,16 @@ const BrandingFilterableTable = () => {
     return daysDiff;
   };
 
-  const filteredData = dataBranding.filter((item) =>
+  const handleSort = (field) => {
+    if (field === sortedField) {
+      setSortedOrder(sortedOrder === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortedField(field);
+      setSortedOrder('asc');
+    }
+  };
+
+  const filteredData = data.filter((item) =>
     (selectedLager === 'All' || item.lager === selectedLager) &&
     (item.status.toLowerCase().includes(searchTerm.toLowerCase()) ||
       item.auftragsnr.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -74,7 +72,6 @@ const BrandingFilterableTable = () => {
       (selectedDateFilter === '60' && calculateDateDifference(item.event_date, 60) <= 60 && calculateDateDifference(item.event_date) >= 0) ||
       (selectedDateFilter === '90' && calculateDateDifference(item.event_date, 90) <= 90 && calculateDateDifference(item.event_date) >= 0))
   );
-
 
   const sortedData = [...filteredData].sort((a, b) => {
     if (sortedOrder === 'asc') {
@@ -228,7 +225,7 @@ const BrandingFilterableTable = () => {
                   </TableCell>
                   <TableCell className='table-cell'>{item.auftragsnr}</TableCell>
                   <TableCell className='table-cell'>{item.lager}</TableCell>
-                  <TableCell className='table-cell'>{item.event_date}</TableCell>
+                  <TableCell className='table-cell'>{new Date(item.event_date).toLocaleDateString()}</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell colSpan={5}>
