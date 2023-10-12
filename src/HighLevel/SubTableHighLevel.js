@@ -13,7 +13,7 @@ const SubTable = ({ subTableData }) => {
      const getColorVertrieb=(vertrieb)=>{
         switch(vertrieb){
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Nachhaken':
@@ -25,7 +25,7 @@ const SubTable = ({ subTableData }) => {
     const getColorMarketing=(marketing)=>{
         switch(marketing){
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Nachhaken':
@@ -37,7 +37,7 @@ const SubTable = ({ subTableData }) => {
     const getColorBranding=(branding)=>{
         switch(branding){
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Nachhaken':
@@ -49,7 +49,7 @@ const SubTable = ({ subTableData }) => {
     const getColorEntwicklung=(entwicklung)=>{
         switch(entwicklung){
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Nachhaken':
@@ -61,7 +61,7 @@ const SubTable = ({ subTableData }) => {
     const getColorSupport=(support)=>{
         switch(support){
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Nachhaken':
@@ -73,7 +73,7 @@ const SubTable = ({ subTableData }) => {
     const getColorEinkauf=(einkauf)=>{
         switch(einkauf){
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Nachhaken':
@@ -85,7 +85,7 @@ const SubTable = ({ subTableData }) => {
     const getColorKunden=(kunden)=>{
         switch(kunden){
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Nachhaken':
@@ -97,7 +97,7 @@ const SubTable = ({ subTableData }) => {
     const getColorExterne=(externe)=>{
         switch(externe){
             case 'Fertig':
-                return 'green';
+                return '#00bc12';
             case 'Spät':
                 return 'red';
             case 'Überfällig':
