@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../Header';
 import { Select, MenuItem } from '@mui/material';
 import Pagination from '@mui/material/Pagination';
 import Table from '@mui/material/Table';
@@ -102,7 +101,7 @@ const BrandingFilterableTable = () => {
   const getColorStatus = (status) => {
     switch (status) {
       case 'Fertig':
-        return 'green';
+        return '#00bc12';
       case 'Spät':
         return 'red';
       case 'Überfällig':
@@ -114,7 +113,6 @@ const BrandingFilterableTable = () => {
 
   return (
     <div>
-      <Header />
       <h2>HighLevel Bereiche \ Branding</h2>
       <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap',}}>
         <div className="searchbar">

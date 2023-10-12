@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../Header';
 import dataHighLevelBereiche from './dataHighLevelBereiche.json';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -15,6 +14,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Paper from '@mui/material/Paper';
 import SubTable from './BereicheSubTable';
 import { Link } from 'react-router-dom';
+import Navbar from '../Nav/Navbar';
 
 const HighLevelBereiche = () => {
     const [expandedRow, setExpandedRow] = useState(null);
@@ -39,8 +39,8 @@ const HighLevelBereiche = () => {
     };
     return (
         <div>
-            <Header />
-            <h1>HighLevel nach Bereiche</h1>
+            <Navbar/>
+            <h2 className='breadcrumb'>HighLevel nach Bereiche</h2><br/>
             <TableContainer component={Paper}>
                 <Table aria-label="expandable table">
                     <TableHead className='table-head'>

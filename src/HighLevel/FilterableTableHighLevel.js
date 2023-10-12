@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Header from '../Header';
 import { Select, MenuItem } from '@mui/material';
 import Pagination from '@mui/material/Pagination';
 import Table from '@mui/material/Table';
@@ -19,6 +18,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SubTable from './SubTableHighLevel';
 import data from './data.json'
+import Navbar from '../Nav/Navbar';
 
 const FilterableTableHighLevel = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -99,7 +99,7 @@ const FilterableTableHighLevel = () => {
   const getColorStatus = (status) => {
     switch (status) {
       case 'Fertig':
-        return 'green';
+        return '#00bc12';
       case 'Spät':
         return 'red';
       case 'Überfällig':
@@ -111,8 +111,8 @@ const FilterableTableHighLevel = () => {
   
   return (
     <div>
-      <Header />
-      <h1>High Level</h1>
+      <Navbar/>
+      <h2 className='breadcrumb'>High Level</h2>
       <div style={{ display: 'flex', alignItems: 'center',flexWrap: 'wrap', }}>
         <div className="searchbar">
           <InputBase
