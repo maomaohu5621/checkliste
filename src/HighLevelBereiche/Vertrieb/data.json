@@ -1,0 +1,310 @@
+[
+    {
+        "id": "1",
+        "status": "Fertig",
+        "auftragsnr": "12356",
+        "pau_fau": "PAU1235",
+        "lager": "BOH",
+        "event_date": "2023-10-23",
+        "subTableDataVertrieb": [
+            {
+                "id": 1,
+                "art_nr": "EIN",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "status": "Fertig",
+        "auftragsnr": "5986",
+        "pau_fau": "FAU1235",
+        "lager": "KÖ",
+        "event_date": "2023-09-03",
+        "subTableDataVertrieb": [
+            {
+                "id": 1,
+                "art_nr": "KLA",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "art_nr": "360",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "status": "Fertig",
+        "auftragsnr": "698453",
+        "pau_fau": "PAU35564",
+        "lager": "HH",
+        "event_date": "2023-12-03",
+        "subTableDataVertrieb": [
+            {
+                "id": 1,
+                "art_nr": "DRE",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "art_nr": "EIN",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "status": "Fertig",
+        "auftragsnr": "71654",
+        "pau_fau": "FAU35564",
+        "lager": "BE",
+        "event_date": "2024-01-03",
+        "subTableDataVertrieb": [
+            {
+                "id": 1,
+                "art_nr": "SPI",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "art_nr": "SPM",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "art_nr": "EIN",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "status": "Fertig",
+        "auftragsnr": "54698453",
+        "pau_fau": "PAU35564",
+        "lager": "HH",
+        "event_date": "2023-12-03",
+        "subTableDataVertrieb": [
+            {
+                "id": 1,
+                "art_nr": "DRE",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "art_nr": "EIN",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "status": "Fertig",
+        "auftragsnr": "1654",
+        "pau_fau": "FAU35564",
+        "lager": "BE",
+        "event_date": "2024-02-03",
+        "subTableDataVertrieb": [
+            {
+                "id": 1,
+                "art_nr": "SPI",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "art_nr": "SPM",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "art_nr": "EIN",
+                "aufgabenVertrieb": [
+                    {
+                        "id": 1,
+                        "aufgabe_name": "Aufgabe_A",
+                        "aufgabe_content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    },
+                    {
+                        "id": 2,
+                        "aufgabe_name": "Aufgabe_B",
+                        "aufgabe_content": "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth."
+                    },
+                    {
+                        "id": 3,
+                        "aufgabe_name": "Aufgabe_C",
+                        "aufgabe_content": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. "
+                    }
+                ]
+            }
+        ]
+    }
+]

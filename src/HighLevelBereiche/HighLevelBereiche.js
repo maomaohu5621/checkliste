@@ -40,7 +40,7 @@ const HighLevelBereiche = () => {
     return (
         <div>
             <Navbar/>
-            <h2 className='breadcrumb'>HighLevel nach Bereiche</h2><br/>
+            <h2 className='breadcrumb'> HighLevel nach Bereiche</h2><br/>
             <TableContainer component={Paper}>
                 <Table aria-label="expandable table">
                     <TableHead className='table-head'>

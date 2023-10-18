@@ -16,11 +16,11 @@ import Accordion from '@mui/material/Accordion';
 import TableSortLabel from '@mui/material/TableSortLabel';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import SubTable from './BrandingSubTable';
+import SubTable from './EntwicklungSubTable';
 import data from './data.json';
-import Navbar from '../Nav/Navbar';
+import Navbar from '../../Nav/Navbar';
 
-const BrandingFilterableTable = () => {
+const EntwicklungFilterableTable = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedLager, setSelectedLager] = useState('All');
   const [selectedDateFilter, setSelectedDateFilter] = useState('all');
@@ -112,7 +112,7 @@ const BrandingFilterableTable = () => {
   return (
     <div>
       <Navbar/>
-      <h2 className='breadcrumb'>HighLevel Bereiche \ Branding</h2>
+      <h2 className='breadcrumb'> HighLevel Bereiche \ Entwicklung</h2>
       <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap',}}>
         <div className="searchbar">
           <InputBase
@@ -252,4 +252,4 @@ const BrandingFilterableTable = () => {
   );
 };
 
-export default BrandingFilterableTable;
+export default EntwicklungFilterableTable;
