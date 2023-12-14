@@ -42,7 +42,44 @@
                 "einkauf":"Fertig",
                 "kunden":"Fertig",
                 "externe":"Nachhaken"
-            }
+            },
+            {
+                "id": 4,
+                "art_nr": "EIN",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Fertig"
+            },
+            {
+                "id": 5,
+                "art_nr": "KLA",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            {
+                "id": 6,
+                "art_nr": "360",
+                "vertrieb": "Fertig",
+                "marketing": "Fertig",
+                "branding":"Fertig",
+                "entwicklung":"Fertig",
+                "support":"Fertig",
+                "einkauf":"Fertig",
+                "kunden":"Fertig",
+                "externe":"Nachhaken"
+            },
+            
         ]
     },
     {

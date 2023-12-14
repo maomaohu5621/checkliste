@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Select, MenuItem } from '@mui/material';
+import Container from '@mui/material/Container';
 import Pagination from '@mui/material/Pagination';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -112,6 +113,7 @@ const FilterableTableHighLevel = () => {
   return (
     <div>
       <Navbar/>
+      <Container className='no-padding'>
       <h2 className='breadcrumb'>High Level</h2>
       <div style={{ display: 'flex', alignItems: 'center',flexWrap: 'wrap', }}>
         <div className="searchbar">
@@ -249,6 +251,7 @@ const FilterableTableHighLevel = () => {
           onChange={(event, value) => setCurrentPage(value)}
         />
       </TableContainer>
+      </Container>
     </div>
   );
 };
